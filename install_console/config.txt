@@ -1,0 +1,4 @@
+path="https://cdn.twistlock.com/releases/6e6c2d6a/prisma_cloud_compute_edition_20_04_163.tar.gz"
+file="prisma_cloud_compute_edition_20_04_163.tar.gz"
+token="your_prisma_cloud_access_token"
+platform="linux"
