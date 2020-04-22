@@ -8,14 +8,14 @@ config.txtを以下の通り設定します。
 
 1. cred : ユーザー名とパスワードを”:”区切りで指定します。 例: ”admin:Passw0rd” 
 2. source : backup元のTwistlock ConsoleのURLを指定します。 例: ”https://twistlock.macnica.net:8083”
-3. dir : 作業ディレクトリ名(任意)をしています。
+3. dir : 作業ディレクトリ名(任意)を指定します。
 
 設定後、backup.shを実行すると、全てのバックアップが実行されます。  
 ※ スクリプトは項目単位で分割されているので、個別に利用することも可能です。
 
 ## 条件
 1. ポリシー設定以外のバックアップ(ログや認証、スキャン結果やインシデント検知を含む各種レポート)は取得しません。
-2. 本スクリプトはバージョン20.04にて作成しています。これ以外のバージョンでは動作が異なる可能性がございます。
+2. 本スクリプトはバージョン19.11と20.04でテストしています。これ以外のバージョンでは動作が異なる可能性がございます。
 
 ## バックアップ対象
 
@@ -33,16 +33,17 @@ config.txtを以下の通り設定します。
 |Defend|Vulnerabilities|Hosts|v|||
 |Defend|Vulnerabilities|Registry|v|||
 |Defend|Vulnerabilities|Functions|v|||
-|Defend|Vulnerabilities|PCF Blobs|v|||
-|Defend|Compliance|Containers/Images|v|||
+|Defend|Vulnerabilities|PCF Blobstore|v|||
+|Defend|Compliance|Containers and Images|v|||
 |Defend|Compliance|Hosts|v|||
 |Defend|Compliance|Functions|v|||
 |Defend|Compliance|Trusted Images|v|||
-|Defend|Compliance|Custom rules|v|||
-|Defend|Compliance|Cloud Platform|v|||
+|Defend|Compliance|Custom|v|||
+|Defend|Compliance|Cloud Platforms|v|||
 |Defend|Access|Docker|v|||
 |Defend|Access|Secrets|v|||
 |Defend|Access|Kubernetes|v|||
+|Defend|Access|Admission|||(20.04より追加)|
 |Monitor|Events|||||
 |Monitor|Runtime|Incidents||||
 |Monitor|Runtime|Container Models||||
@@ -50,21 +51,52 @@ config.txtを以下の通り設定します。
 |Monitor|Vulnerabilities|Explorer||||
 |Monitor|Vulnerabilities|Images||||
 |Monitor|Vulnerabilities|Hosts||||
-|Monitor|Vulnerabilities|Registry||||
+|Monitor|Vulnerabilities|Registry|||(20.04ではImages配下に表示)|
 |Monitor|Vulnerabilities|Functions||||
-|Monitor|Vulnerabilities|Jenkins|||(20.04ではCIに統合)|
-|Monitor|Vulnerabilities|Twsitcli|||(20.04ではCIに統合)|
+|Monitor|Vulnerabilities|Jenkins|||(20.04ではImages配下のCIに統合)|
+|Monitor|Vulnerabilities|Twsitcli|||(20.04ではImages配下のCIに統合)|
 |Monitor|Vulnerabilities|CVE Viewer||||
 |Monitor|Vulnerabilities|PCF Blobs||||
 |Monitor|Compliance|Explorer||||
 |Monitor|Compliance|Containers||||
 |Monitor|Compliance|Images||||
 |Monitor|Compliance|Hosts||||
-|Monitor|Compliance|Registry||||
+|Monitor|Compliance|Registry|||(20.04ではImages配下に表示)|
 |Monitor|Compliance|Functions||||
-|Monitor|Compliance|Jenkins|||(20.04ではCIに統合)|
-|Monitor|Compliance|Twsitcli|||(20.04ではCIに統合)|
+|Monitor|Compliance|Jenkins|||(20.04ではImages配下のCIに統合)|
+|Monitor|Compliance|Twsitcli|||(20.04ではImages配下のCIに統合)|
+|Monitor|Compliance|Trusted Images||||
 |Monitor|Compliance|Cloud Discovery||||
 |Monitor|Compliance|Cloud Compliance||||
-|Monitor|Compliance|Trusted Images||||
+|Manage|View Logs|History||||
+|Manage|View Logs|Constole||||
+|Manage|Projects||||オンプレ版のみ|
+|Manage|Defenders|Manage||||
+|Manage|Defenders|Name||||
+|Manage|Defenders|Deploy||||
+|Manage|Alerts|Manage|v|||
+|Manage|Alerts|Logging|v||(19.11ではSystem配下にある)|
+|Manage|Alerts|Alert Labels|v|||
+|Manage|Collections|Collections|v||(20.04ではメニューがCollections and Tadsとなっている)|
+|Manage|Collections|Tags|v||(20.04より追加)|
+|Manage|Authentication|Users||||
+|Manage|Authentication|Groups||||
+|Manage|Authentication|Ststem Certificates||||
+|Manage|Authentication|User Certificates||||
+|Manage|Authentication|Secrets|v|||
+|Manage|Authentication|Logon||||
+|Manage|Authentication|LDAP||||
+|Manage|Authentication|SAML||||
+|Manage|Authentication|Credential Store||||
+|Manage|Authentication|LDAP||||
+|Manage|System|Intelligence||||
+|Manage|System|License||||
+|Manage|System|Scan|v|||
+|Manage|System|SCAP|v|||
+|Manage|System|Forensics|v|||
+|Manage|System|Proxy||||
+|Manage|System|Custome Feeds|v|||
+|Manage|System|Downloads||||
+|Manage|System|Backup & Restore||||
+
 
