@@ -21,6 +21,50 @@ config.txtを以下の通り設定します。
 
 |大メニュー|中メニュー|小メニュー|対象|スクリプト名|備考|
 |:---|:---|:---|---|:---|:---|
-|Radar|||x|||
-||||||
-||||||
+|Radar||||||
+|Defend|Firewall|CNNF|v|policies_firewall_network.sh||
+|Defend|Firewall|CNAF|v|policies_firewall_app.sh||
+|Defend|Runtime|Container|v|||
+|Defend|Runtime|Host|v|||
+|Defend|Runtime|Serverless|v|||
+|Defend|Runtime|App Embedded|v|||
+|Defend|Runtime|Custom rules|v|||
+|Defend|Vulnerabilities|Images|v|||
+|Defend|Vulnerabilities|Hosts|v|||
+|Defend|Vulnerabilities|Registry|v|||
+|Defend|Vulnerabilities|Functions|v|||
+|Defend|Vulnerabilities|PCF Blobs|v|||
+|Defend|Compliance|Containers/Images|v|||
+|Defend|Compliance|Hosts|v|||
+|Defend|Compliance|Functions|v|||
+|Defend|Compliance|Trusted Images|v|||
+|Defend|Compliance|Custom rules|v|||
+|Defend|Compliance|Cloud Platform|v|||
+|Defend|Access|Docker|v|||
+|Defend|Access|Secrets|v|||
+|Defend|Access|Kubernetes|v|||
+|Monitor|Events|||||
+|Monitor|Runtime|Incidents||||
+|Monitor|Runtime|Container Models||||
+|Monitor|Runtime|Host Models||||
+|Monitor|Vulnerabilities|Explorer||||
+|Monitor|Vulnerabilities|Images||||
+|Monitor|Vulnerabilities|Hosts||||
+|Monitor|Vulnerabilities|Registry||||
+|Monitor|Vulnerabilities|Functions||||
+|Monitor|Vulnerabilities|Jenkins|||(20.04ではCIに統合)|
+|Monitor|Vulnerabilities|Twsitcli|||(20.04ではCIに統合)|
+|Monitor|Vulnerabilities|CVE Viewer||||
+|Monitor|Vulnerabilities|PCF Blobs||||
+|Monitor|Compliance|Explorer||||
+|Monitor|Compliance|Containers||||
+|Monitor|Compliance|Images||||
+|Monitor|Compliance|Hosts||||
+|Monitor|Compliance|Registry||||
+|Monitor|Compliance|Functions||||
+|Monitor|Compliance|Jenkins|||(20.04ではCIに統合)|
+|Monitor|Compliance|Twsitcli|||(20.04ではCIに統合)|
+|Monitor|Compliance|Cloud Discovery||||
+|Monitor|Compliance|Cloud Compliance||||
+|Monitor|Compliance|Trusted Images||||
+
