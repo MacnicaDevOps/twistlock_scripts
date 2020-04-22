@@ -78,7 +78,7 @@ config.txtを以下の通り設定します。
 |Manage|Alerts|Logging|v||(19.11ではSystem配下にある)|
 |Manage|Alerts|Alert Labels|v|||
 |Manage|Collections|Collections|v||(20.04ではメニューがCollections and Tadsとなっている)|
-|Manage|Collections|Tags|v||(20.04より追加)|
+|Manage|Collections|Tags|||(20.04より追加)|
 |Manage|Authentication|Users||||
 |Manage|Authentication|Groups||||
 |Manage|Authentication|Ststem Certificates||||
