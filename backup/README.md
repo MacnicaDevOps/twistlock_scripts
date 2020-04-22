@@ -22,12 +22,12 @@ config.txtを以下の通り設定します。
 |大メニュー|中メニュー|小メニュー|対象|出力ファイル名|備考|
 |:---|:---|:---|---|:---|:---|
 |Radar||||||
-|Defend|Firewall|CNNF|v|policies_firewall_app_container.json<br>policies_firewall_app_host.json<br>policies_firewall_app_app-embedded.json<br>/policies_firewall_app_serverless.json||
-|Defend|Firewall|CNAF|v|policies_firewall_app_container.json<br>policies_firewall_app_host.json<br>policies_firewall_app_app-embedded.json<br>/policies_firewall_app_serverless.json||
-|Defend|Runtime|Container|v|policies_runtime.sh||
-|Defend|Runtime|Host|v|policies_runtime.sh||
-|Defend|Runtime|Serverless|v|policies_runtime.sh||
-|Defend|Runtime|App Embedded|v|policies_runtime.sh||
+|Defend|Firewall|CNNF|v|policies_firewall_network_container.json<br>policies_firewall_network_host.json<br>policies_firewall_network_entities.json||
+|Defend|Firewall|CNAF|v|policies_firewall_app_container.json<br>policies_firewall_app_host.json<br>policies_firewall_app_app-embedded.json<br>policies_firewall_app_serverless.json||
+|Defend|Runtime|Container|v|policies_runtime_container.json||
+|Defend|Runtime|Host|v|policies_runtime_host.json||
+|Defend|Runtime|Serverless|v|policies_runtime_app-embedded.json||
+|Defend|Runtime|App Embedded|v|policies_runtime_custom_rules.json||
 |Defend|Runtime|Custom rules|v|policies_runtime.sh||
 |Defend|Vulnerabilities|Images|v|policies_vulnerability.sh||
 |Defend|Vulnerabilities|Hosts|v|policies_vulnerability.sh||
