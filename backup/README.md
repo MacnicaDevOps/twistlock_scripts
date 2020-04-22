@@ -19,27 +19,27 @@ config.txtを以下の通り設定します。
 
 ## バックアップ対象
 
-|大メニュー|中メニュー|小メニュー|対象|スクリプト名|備考|
+|大メニュー|中メニュー|小メニュー|対象|出力ファイル名|備考|
 |:---|:---|:---|---|:---|:---|
 |Radar||||||
-|Defend|Firewall|CNNF|v|policies_firewall_network.sh||
-|Defend|Firewall|CNAF|v|policies_firewall_app.sh||
-|Defend|Runtime|Container|v|||
-|Defend|Runtime|Host|v|||
-|Defend|Runtime|Serverless|v|||
-|Defend|Runtime|App Embedded|v|||
-|Defend|Runtime|Custom rules|v|||
-|Defend|Vulnerabilities|Images|v|||
-|Defend|Vulnerabilities|Hosts|v|||
-|Defend|Vulnerabilities|Registry|v|||
-|Defend|Vulnerabilities|Functions|v|||
+|Defend|Firewall|CNNF|v|policies_firewall_app_container.json<br>policies_firewall_app_host.json<br>policies_firewall_app_app-embedded.json<br>/policies_firewall_app_serverless.json||
+|Defend|Firewall|CNAF|v|policies_firewall_app_container.json<br>policies_firewall_app_host.json<br>policies_firewall_app_app-embedded.json<br>/policies_firewall_app_serverless.json||
+|Defend|Runtime|Container|v|policies_runtime.sh||
+|Defend|Runtime|Host|v|policies_runtime.sh||
+|Defend|Runtime|Serverless|v|policies_runtime.sh||
+|Defend|Runtime|App Embedded|v|policies_runtime.sh||
+|Defend|Runtime|Custom rules|v|policies_runtime.sh||
+|Defend|Vulnerabilities|Images|v|policies_vulnerability.sh||
+|Defend|Vulnerabilities|Hosts|v|policies_vulnerability.sh||
+|Defend|Vulnerabilities|Registry|v|policies_vulnerability.sh||
+|Defend|Vulnerabilities|Functions|v|policies_vulnerability.sh||
 |Defend|Vulnerabilities|PCF Blobstore|v|||
 |Defend|Compliance|Containers and Images|v|||
-|Defend|Compliance|Hosts|v|||
-|Defend|Compliance|Functions|v|||
-|Defend|Compliance|Trusted Images|v|||
-|Defend|Compliance|Custom|v|||
-|Defend|Compliance|Cloud Platforms|v|||
+|Defend|Compliance|Hosts|v|policies_compliance.sh||
+|Defend|Compliance|Functions|v|policies_compliance.sh||
+|Defend|Compliance|Trusted Images|v|policies_compliance.sh||
+|Defend|Compliance|Custom|v|policies_compliance.sh||
+|Defend|Compliance|Cloud Platforms|v|policies_compliance.sh||
 |Defend|Access|Docker|v|||
 |Defend|Access|Secrets|v|||
 |Defend|Access|Kubernetes|v|||
