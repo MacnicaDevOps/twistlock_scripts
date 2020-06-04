@@ -1,4 +1,4 @@
-# Twistlock Backupスクリプト
+# Twistlock Backupスクリプト(未完成)
 
 Twistlock のバックアップを実行するスクリプトです。  
 設定単位でAPIを利用してJSON形式のデータをファイルに出力をするものです。
