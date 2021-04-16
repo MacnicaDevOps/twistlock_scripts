@@ -36,7 +36,7 @@ config.txtを以下の通り設定します。
 |Defend|Vulnerabilities|Registry|v|policies_vulnerability.sh||
 |Defend|Vulnerabilities|Functions|v|policies_vulnerability.sh||
 |Defend|Vulnerabilities|PCF Blobstore|v|||
-|Defend|Compliance|Containers and Images|v|||
+|Defend|Compliance|Containers and Images|v|policies_compliance.sh||
 |Defend|Compliance|Hosts|v|policies_compliance.sh||
 |Defend|Compliance|Functions|v|policies_compliance.sh||
 |Defend|Compliance|Trusted Images|v|policies_compliance.sh||
